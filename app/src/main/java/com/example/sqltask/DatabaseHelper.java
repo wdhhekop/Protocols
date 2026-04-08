@@ -20,7 +20,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("CREATE TABLE users (" + COLUMN_ID
+        db.execSQL("CREATE TABLE " + TABLE + " (" + COLUMN_ID
                 + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_NAME
                 + " TEXT, " + COLUMN_YEAR + " INTEGER);");
         // добавление начальных данных
